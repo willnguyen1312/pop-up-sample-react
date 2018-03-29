@@ -20,7 +20,7 @@ const modalContentStyle = {
   width: "80%"
 };
 
-const close = {
+const closeButtonStyle = {
   color: "#aaaaaa",
   float: "right",
   fontSize: 28,
@@ -31,7 +31,7 @@ const close = {
 const Modal = ({ toggleModel }) => (
   <div id="myModal" style={modalStyle}>
     <div style={modalContentStyle}>
-      <span style={close} onClick={toggleModel}>
+      <span style={closeButtonStyle} onClick={toggleModel}>
         &times;
       </span>
       <p>Some text in the Modal..</p>
